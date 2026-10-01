@@ -1,4 +1,17 @@
 #  Java Full-Stack E-Commerce API
+# E-commerce API
+
+API REST de back-end para uma loja virtual, com autenticação JWT e pagamentos pelo Stripe.
+**Status: em desenvolvimento.**
+
+## Tecnologias
+Java 17, Spring Boot 3, Spring Security, JWT, Spring Data JPA/Hibernate, MySQL, Stripe Java SDK
+
+## O que a API faz
+- **Autenticação:** login com JWT. O catálogo é público; cadastro de produtos e checkout exigem token.
+- **Checkout:** recebe o carrinho com vários itens, salva o pedido no MySQL e cria uma Checkout Session no Stripe, com o ID do pedido nos metadados.
+- **Webhook:** valida a assinatura do Stripe e, ao receber `checkout.session.completed`, muda o status do pedido para PAGO.
+- **Transação:** a criação do pedido usa `@Transactional`.
 
 <p align="center">
   <img src="https://shields.io" alt="Java" />
