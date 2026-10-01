@@ -1,4 +1,4 @@
-#  Java Full-Stack E-Commerce API
+
 # E-commerce API
 
 API REST de back-end para uma loja virtual, com autenticação JWT e pagamentos pelo Stripe.
