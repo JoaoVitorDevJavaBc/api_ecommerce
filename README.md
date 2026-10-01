@@ -28,22 +28,8 @@ Java 17, Spring Boot 3, Spring Security, JWT, Spring Data JPA/Hibernate, MySQL, 
 │
 (Muda Status para PAGO) ──► [Atualiza Banco MySQL]
 
-###  Segurança de Nível Comercial (Spring Security + JWT)
-* **Autenticação Stateless:** Controle de sessão totalmente sem estado utilizando tokens **JWT (JSON Web Tokens)** criptografados com o algoritmo `HS256`.
-* **Filtro Customizado Interceptador:** Filtro que estende `OncePerRequestFilter` para capturar, decodificar e injetar o contexto de autenticação do usuário a cada requisição na API.
-* **Acesso Granular:** Separação rígida de rotas públicas de consulta de catálogo e rotas privadas protegidas que exigem validação cadastral.
-
 ###  Persistência de Dados e Integridade
-* **Operações Atômicas:** Uso da anotação `@Transactional` para garantir que, caso ocorra qualquer erro de comunicação com o gateway de pagamentos, o banco de dados realize o *rollback* automático das tabelas de histórico.
-
----
-
-##  Stack 
-
-* **Core:** Java 17, Spring Boot 3.x
-* **Data:** Spring Data JPA, Hibernate, MySQL Driver
-* **Security:** Spring Boot Starter Security, JJWT (Java JWT API)
-* **Integration:** Stripe Java SDK
+* **Operações Atômicas:** Uso da anotação `@Transactional` para garantir que, caso ocorra qualquer erro de comunicação com o gateway de pagamentos, o banco de dados realize o *rollback* automático das tabelas de histórico
 
 ---
 
