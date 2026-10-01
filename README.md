@@ -28,13 +28,6 @@ Java 17, Spring Boot 3, Spring Security, JWT, Spring Data JPA/Hibernate, MySQL, 
 │
 (Muda Status para PAGO) ──► [Atualiza Banco MySQL]
 
-##  Funcionalidades de Destaque
-
-###  Gateway de Pagamento Inteligente (Stripe)
-* **Carrinho de Compras Dinâmico:** Processamento de múltiplos itens, preços e quantidades em lote em uma única requisição.
-* **Rastreabilidade por Metadata:** Vinculação do ID do pedido gerado no MySQL diretamente aos metadados da sessão do Stripe.
-* **Escuta Ativa (Webhooks):** Endpoint blindado com verificação de assinatura digital (`Stripe-Signature`), responsável por escutar o evento `checkout.session.completed` e realizar a baixa do pedido de forma assíncrona.
-
 ###  Segurança de Nível Comercial (Spring Security + JWT)
 * **Autenticação Stateless:** Controle de sessão totalmente sem estado utilizando tokens **JWT (JSON Web Tokens)** criptografados com o algoritmo `HS256`.
 * **Filtro Customizado Interceptador:** Filtro que estende `OncePerRequestFilter` para capturar, decodificar e injetar o contexto de autenticação do usuário a cada requisição na API.
