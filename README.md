@@ -38,7 +38,7 @@ Java 17, Spring Boot 3, Spring Security, JWT, Spring Data JPA/Hibernate, MySQL, 
 
 ---
 
-##  Stack Tecnológica
+##  Stack 
 
 * **Core:** Java 17, Spring Boot 3.x
 * **Data:** Spring Data JPA, Hibernate, MySQL Driver
