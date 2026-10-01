@@ -13,17 +13,6 @@ Java 17, Spring Boot 3, Spring Security, JWT, Spring Data JPA/Hibernate, MySQL, 
 - **Webhook:** valida a assinatura do Stripe e, ao receber `checkout.session.completed`, muda o status do pedido para PAGO.
 - **Transação:** a criação do pedido usa `@Transactional`.
 
-<p align="center">
-  <img src="https://shields.io" alt="Java" />
-  <img src="https://shields.io" alt="Spring Boot" />
-  <img src="https://shields.io" alt="MySQL" />
-  <img src="https://shields.io" alt="Stripe" />
-  <img src="https://shields.io" alt="JWT" />
-</p>
-
-An API RESTful de alta performance desenvolvida para gerenciar o ecossistema completo de um e-commerce moderno. O sistema unifica o controle de inventário físico, persistência relacional automatizada, segurança baseada em tokens e um fluxo completo de pagamentos com conciliação automática.
-
----
 
 ##  Arquitetura & Fluxo do Sistema
 
