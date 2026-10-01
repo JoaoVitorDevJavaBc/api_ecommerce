@@ -79,7 +79,3 @@ api.security.token.secret=${JWT_SECRET_KEY:SuaFraseSecretaComMaisDe32CaracteresP
 | **Catalog** | `POST` | `/api/produtos-fisicos` | **Autenticado** | Insere novos produtos físicos no estoque. |
 | **Checkout** | `POST` | `/api/pedidos/checkout` | **Autenticado** | Processa o carrinho, salva no banco e gera o link do Stripe. |
 | **Stripe** | `POST` | `/api/webhooks/stripe` | **Público** | Recebe confirmações do Stripe e atualiza status para PAGO. |
-
----
-
-<p align="center">Desenvolvido com foco em boas práticas de engenharia de software e padrões de mercado RESTful.</p>
