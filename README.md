@@ -28,9 +28,6 @@ Java 17, Spring Boot 3, Spring Security, JWT, Spring Data JPA/Hibernate, MySQL, 
 │
 (Muda Status para PAGO) ──► [Atualiza Banco MySQL]
 
-###  Persistência de Dados e Integridade
-* **Operações Atômicas:** Uso da anotação `@Transactional` para garantir que, caso ocorra qualquer erro de comunicação com o gateway de pagamentos, o banco de dados realize o *rollback* automático das tabelas de histórico
-
 ---
 
 ##  Configuração do Ambiente (`application.properties`)
